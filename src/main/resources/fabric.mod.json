@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "adminbroadcast",
+	"version": "${version}",
+	"name": "Admin Command Broadcast",
+	"description": "Broadcasts commands executed by server administrators (OP level 2+) to chat, including feedback.",
+	"authors": [
+		"Eduardo"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"com.eduardo.adminbroadcast.AdminCommandBroadcastMod"
+		]
+	},
+	"mixins": [
+		"adminbroadcast.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
